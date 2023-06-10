@@ -149,9 +149,10 @@ public class TicketPlan{
    }
    
    public double getPlanPrice(){
-      double price = (costPerDayChild*days)+ (costPerDayAdult * days);
+      double price = ((costPerDayChild*children)+ (costPerDayAdult * adults)) * days;
       return price;
       }
+    
     
 } //End of class
     
